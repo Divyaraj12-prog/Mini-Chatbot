@@ -14,7 +14,7 @@ const App = () => {
 
  
   useEffect(() => {
-    const socket = io('http://localhost:3000');
+    const socket = io('https://mini-chatbot-3uvc.onrender.com');
     socketRef.current = socket;
  
     socket.on('ai-response', (data) => {
